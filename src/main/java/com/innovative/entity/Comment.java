@@ -16,6 +16,7 @@ public class Comment {
     @ManyToOne
     private User user;
 
+	@Column(columnDefinition = "TEXT")
     private String content;
 
     private LocalDateTime createdAt = LocalDateTime.now();
